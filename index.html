@@ -5,7 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="survey-form">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A description about this survey</p>
+      <form>
+        <div class="survey-form__form-row">
+          <label id="name-label">Your name*</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+        </div>
+        <div class="survey-form__form-row">
+          <label id="email-label">Your email*</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+        </div>
+        <div class="survey-form__form-row">
+          <label id="number-label">number field</label>
+          <input type="number" name="number" id="number" placeholder="Enter your number..." min="0" max="150">
+        </div>
+        <div class="survey-form__form-row">
+          <label id="dropdown-label">Drop Down</label>
+          <select name="dropdown" id="dropdown">
+            <option disabled value>Select an option</option>
+            <option selected>First</option>
+            <option>Second</option>
+            <option>Third</option>
+            <option>Fourth</option>
+          </select>
+        </div>
+        <div class="survey-form__form-row">
+          <label id="number-label">Radio buttons</label>
+          <div>
+            <input type="radio" name="radio-choice" value="1">
+            <label id="radio-1">Option 1</label>  
+          </div>
+          <div>
+            <input type="radio" name="radio-choice" value="2">
+            <label id="radio-2">Option 2</label>  
+          </div>
+          <div>
+            <input type="radio" name="radio-choice" value="3">
+            <label id="radio-3">Option 3</label>  
+          </div>
+        </div>
+        <div class="survey-form__form-row">
+          <label id="number-label">Checkbox buttons</label>
+          <div>
+            <input type="checkbox" value="option 1">
+            <label id="radio-1">Option 1</label> 
+          </div>  
+          <div>
+            <input type="checkbox" value="option 2">
+            <label id="radio-1">Option 2</label> 
+          </div> 
+          <div>
+            <input type="checkbox" value="option 3">
+            <label id="radio-1">Option 3</label> 
+          </div> 
+        </div>
+        <div class="survey-form__form-row">
+          <label id="number-label">Text Area</label>
+          <div>
+            <textarea name="comments" placeholder="Additional comments here..."></textarea>
+          </div>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
   </body>
